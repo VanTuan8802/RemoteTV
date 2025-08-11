@@ -7,10 +7,14 @@
 
 import SwiftUI
 import SwiftData
+import Factory
 
 @main
 struct RemoteTVApp: App {
-
+    @Environment(\.scenePhase) var scenePhase
+    @UIApplicationDelegateAdaptor(AppDelegate.self) var appDelegate
+    @InjectedObject(\.app) internal var app: AppManager
+    
     var body: some Scene {
         WindowGroup {
             ContentView()

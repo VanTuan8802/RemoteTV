@@ -10,28 +10,36 @@ PODS:
     - ConnectSDK/Core
     - google-cast-sdk (= 2.7.1)
   - ConnectSDK/no-arc (1.6.0)
+  - Factory (2.5.2)
   - google-cast-sdk (2.7.1):
     - google-cast-sdk/Assets (= 2.7.1)
     - google-cast-sdk/Core (= 2.7.1)
   - google-cast-sdk/Assets (2.7.1):
     - google-cast-sdk/Core
   - google-cast-sdk/Core (2.7.1)
+  - R.swift (7.8.0)
 
 DEPENDENCIES:
   - AndroidTVRemoteControl
   - ConnectSDK
+  - Factory
+  - R.swift
 
 SPEC REPOS:
   trunk:
     - AndroidTVRemoteControl
     - ConnectSDK
+    - Factory
     - google-cast-sdk
+    - R.swift
 
 SPEC CHECKSUMS:
   AndroidTVRemoteControl: a4e8838b85ddc0418d29d0a7bfb732ab98d91f2c
   ConnectSDK: f6159b056ec53943df82c4d541a9bfae21592be4
+  Factory: bfc0d3ec51e8f1b0c91e715ea9b541bb2e1a6f85
   google-cast-sdk: 9c98a8fbe8277277ab01a3318ee965c9aef3d4c9
+  R.swift: f573269ca45b2ab066c082e363dd4c2b297b0d71
 
-PODFILE CHECKSUM: 64e612d8474010091b750f05daaba5cad2db1f4e
+PODFILE CHECKSUM: 88cbbae70171cea8345af0bd0eb2753f34225554
 
 COCOAPODS: 1.16.2
