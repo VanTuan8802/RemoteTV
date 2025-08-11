@@ -17,9 +17,22 @@
 		7E1D7ADBF5B0F67F414DAE2B /* Pods_RemoteTV.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RemoteTV.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		5F63EE082E49DDAB00F1278D /* Exceptions for "RemoteTV" folder in "RemoteTV" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Resources/Info.plist,
+			);
+			target = 5F63ED412E49A4CB00F1278D /* RemoteTV */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		5F63ED442E49A4CB00F1278D /* RemoteTV */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				5F63EE082E49DDAB00F1278D /* Exceptions for "RemoteTV" folder in "RemoteTV" target */,
+			);
 			path = RemoteTV;
 			sourceTree = "<group>";
 		};
@@ -374,7 +387,8 @@
 				DEVELOPMENT_TEAM = 9AUU5RLM92;
 				ENABLE_PREVIEWS = YES;
 				ENABLE_USER_SCRIPT_SANDBOXING = NO;
-				GENERATE_INFOPLIST_FILE = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = RemoteTV/Resources/Info.plist;
 				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Search Wifi";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -407,7 +421,8 @@
 				DEVELOPMENT_TEAM = 9AUU5RLM92;
 				ENABLE_PREVIEWS = YES;
 				ENABLE_USER_SCRIPT_SANDBOXING = NO;
-				GENERATE_INFOPLIST_FILE = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = RemoteTV/Resources/Info.plist;
 				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Search Wifi";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
