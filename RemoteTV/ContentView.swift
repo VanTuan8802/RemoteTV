@@ -9,8 +9,6 @@ import SwiftUI
 import SwiftData
 
 struct ContentView: View {
-
-    @StateObject private var tvDiscovery = TVDiscovery()
     
     var body: some View {
         VStack {
