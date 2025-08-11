@@ -12,10 +12,14 @@ let R = _R(bundle: Bundle(for: BundleFinder.self))
 struct _R {
   let bundle: Foundation.Bundle
   var color: color { .init(bundle: bundle) }
+  var image: image { .init(bundle: bundle) }
   var font: font { .init(bundle: bundle) }
   var file: file { .init(bundle: bundle) }
 
   func color(bundle: Foundation.Bundle) -> color {
+    .init(bundle: bundle)
+  }
+  func image(bundle: Foundation.Bundle) -> image {
     .init(bundle: bundle)
   }
   func font(bundle: Foundation.Bundle) -> font {
@@ -44,6 +48,23 @@ struct _R {
 
     /// Color `color_808080`.
     var color_808080: RswiftResources.ColorResource { .init(name: "color_808080", path: [], bundle: bundle) }
+  }
+
+  /// This `_R.image` struct is generated, and contains static references to 4 images.
+  struct image {
+    let bundle: Foundation.Bundle
+
+    /// Image `connected`.
+    var connected: RswiftResources.ImageResource { .init(name: "connected", path: [], bundle: bundle, locale: nil, onDemandResourceTags: nil) }
+
+    /// Image `disconnected`.
+    var disconnected: RswiftResources.ImageResource { .init(name: "disconnected", path: [], bundle: bundle, locale: nil, onDemandResourceTags: nil) }
+
+    /// Image `mute`.
+    var mute: RswiftResources.ImageResource { .init(name: "mute", path: [], bundle: bundle, locale: nil, onDemandResourceTags: nil) }
+
+    /// Image `unmute`.
+    var unmute: RswiftResources.ImageResource { .init(name: "unmute", path: [], bundle: bundle, locale: nil, onDemandResourceTags: nil) }
   }
 
   /// This `_R.font` struct is generated, and contains static references to 4 fonts.
