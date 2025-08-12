@@ -69,6 +69,9 @@ struct ItemActionView: View {
     private func actionButton(image: Image, action: @escaping () -> Void) -> some View {
         Button(action: action) {
             image
+                .resizable()
+                .scaledToFit()
+                .frame(width: 24, height: 24)
                 .foregroundStyle(Color.white)
         }
     }

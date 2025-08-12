@@ -14,6 +14,8 @@ struct HomeView: View {
         VStack {
             headerView
             Spacer()
+            mainview
+            Spacer()
             actionView
 
         }
@@ -47,7 +49,36 @@ struct HomeView: View {
         }
         .padding(.top, 60)
     }
-    
+
+    @MainActor @ViewBuilder
+    private var mainview: some View {
+        ZStack {
+            if viewModel.mode == .directional {
+                DirectionalPadView()
+            } else {
+                TouchpadView()
+            }
+
+            VStack {
+                Spacer()
+                HStack {
+                    Spacer()
+                    Button(action: {
+                        if viewModel.mode == .directional {
+                            viewModel.mode = .touchPad
+                        } else {
+                            viewModel.mode = .directional
+                        }
+                    }, label: {
+                        Image(viewModel.mode == .directional ? R.image.touchPad : R.image.direction)
+                            .padding(.all, 8)
+                    })
+                }
+            }
+        }
+        .aspectRatio(1, contentMode: .fit) 
+    }
+
     @MainActor @ViewBuilder
     private var actionView: some View {
         GeometryReader { geo in
@@ -70,17 +101,17 @@ struct HomeView: View {
                     HStack(spacing: 8) {
                         ItemActionView(
                             type: .oneAction,
-                            imageMain: Image(systemName: "plus"),
+                            imageMain: Image(R.image.reduceTime),
                             actionMain: { }
                         )
                         ItemActionView(
                             type: .oneAction,
-                            imageMain: Image(systemName: "plus"),
+                            imageMain: Image(systemName: "playpause.fill"),
                             actionMain: { }
                         )
                         ItemActionView(
                             type: .oneAction,
-                            imageMain: Image(systemName: "plus"),
+                            imageMain: Image(R.image.increateTime),
                             actionMain: { }
                         )
                     }
@@ -88,7 +119,7 @@ struct HomeView: View {
                     HStack(spacing: 8) {
                         ItemActionView(
                             type: .oneAction,
-                            imageMain: Image(systemName: "playpause.fill"),
+                            imageMain: Image(systemName: "chevron.left"),
                             actionMain: { }
                         )
                         ItemActionView(

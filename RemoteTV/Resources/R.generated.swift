@@ -50,18 +50,30 @@ struct _R {
     var color_808080: RswiftResources.ColorResource { .init(name: "color_808080", path: [], bundle: bundle) }
   }
 
-  /// This `_R.image` struct is generated, and contains static references to 4 images.
+  /// This `_R.image` struct is generated, and contains static references to 8 images.
   struct image {
     let bundle: Foundation.Bundle
 
     /// Image `connected`.
     var connected: RswiftResources.ImageResource { .init(name: "connected", path: [], bundle: bundle, locale: nil, onDemandResourceTags: nil) }
 
+    /// Image `direction`.
+    var direction: RswiftResources.ImageResource { .init(name: "direction", path: [], bundle: bundle, locale: nil, onDemandResourceTags: nil) }
+
     /// Image `disconnected`.
     var disconnected: RswiftResources.ImageResource { .init(name: "disconnected", path: [], bundle: bundle, locale: nil, onDemandResourceTags: nil) }
 
+    /// Image `increateTime`.
+    var increateTime: RswiftResources.ImageResource { .init(name: "increateTime", path: [], bundle: bundle, locale: nil, onDemandResourceTags: nil) }
+
     /// Image `mute`.
     var mute: RswiftResources.ImageResource { .init(name: "mute", path: [], bundle: bundle, locale: nil, onDemandResourceTags: nil) }
+
+    /// Image `reduceTime`.
+    var reduceTime: RswiftResources.ImageResource { .init(name: "reduceTime", path: [], bundle: bundle, locale: nil, onDemandResourceTags: nil) }
+
+    /// Image `touchPad`.
+    var touchPad: RswiftResources.ImageResource { .init(name: "touchPad", path: [], bundle: bundle, locale: nil, onDemandResourceTags: nil) }
 
     /// Image `unmute`.
     var unmute: RswiftResources.ImageResource { .init(name: "unmute", path: [], bundle: bundle, locale: nil, onDemandResourceTags: nil) }
