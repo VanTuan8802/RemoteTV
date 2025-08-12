@@ -37,7 +37,12 @@ struct HomeView: View {
             })
             
             Spacer()
-            
+            Button(action: {
+                
+            }, label: {
+                Text("Connect")
+            })
+            Spacer()
             Button(action: {
                 viewModel.isMuted.toggle()
             }, label: {
